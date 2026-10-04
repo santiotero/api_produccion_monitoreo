@@ -1,0 +1,22 @@
+{
+  "model_name": "gemini-3.1-flash-lite",
+  "temperature": 0.0,
+  "max_tokens": 512,
+  "recursion_limit": 15,
+  "max_iterations_agentes": 3,
+  "max_tokens_contexto": 6000,
+  "max_intentos_correccion": 3,
+  "redis_url": "redis://localhost:6379",
+  "data_dir": "ingest/data",
+  "bm25_path": "app/vectorstore/bm25_index.pickle",
+  "embedding_model": "models/gemini-embedding-001",
+  "embedding_dim": 1536,
+  "chunk_size": 600,
+  "chunk_overlap": 100,
+  "top_k": 5,
+  "score_threshold": 0.75,
+  "index_name": "cloudindex",
+  "namespace": "multiagente",
+  "phoenix_project_name": "api-multi-agent",
+  "phoenix_endpoint": "http://localhost:6006"
+}
